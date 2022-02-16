@@ -1,0 +1,78 @@
+
+/********** Login & Signup Styles *******/
+.form {
+    width: 360px;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--card-bg);
+    box-shadow: var(--box-shadow);
+}
+.form_title {
+    font-weight: 500;
+    margin-bottom: 3rem;
+    color: var(--heading-color);
+}
+.form_div {
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+.form_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--small-fontsize);
+    border: var(--border-color);
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+    color: var(--heading-color);
+}
+.form_label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    background-color: var(--card-bg);
+    color: var(--heading-color);
+    font-size: var(--regular-fontsize);
+    transition: .3s;
+}
+.form_button {
+    display: block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--body-color);
+    border-radius: .5rem;
+    color: var(--heading-color);
+    letter-spacing: 1px;
+    transition: .3s;
+}
+.form_button:hover {
+    box-shadow: var(--box-shadow);
+}
+.form_input:focus + .form_label {
+    top: -.5rem;
+    left: .8rem;
+    color: var(--heading-color);
+    font-size: var(--small-fontsize);
+    font-weight: 300;
+    z-index: 10;
+}
+.form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label {
+    top: -.5rem;
+    left: .8rem;
+    color: var(--heading-color);
+    font-size: var(--small-fontsize);
+    font-weight: 300;
+    z-index: 10;
+}
+.form_input:focus {
+    border: .12rem solid #8b97c6;
+}
